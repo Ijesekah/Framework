@@ -1,43 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="Framework.css">
+        
         <title>THE MODULAR LAPTOP</title>
     </head>
     <body>
-        <div>
+        <img src="Mypic.JPG" alt="Author's picture" id="my-picture">
+        <p id="author">writen by<br>Amurawaye Ijesekah</p>
+        <h2>THE MODULAR LAPTOP</h2>
            <p>Have you ever felt the need to buy a new laptop just because you are stuck
               on a particular storage or RAM.Have you ever thought of a laptop that it's
               storage can be upgraded to your choice.Well,believe it or not what if I told you that 
               there is a laptop that it's storage and RAM can be upgraded.This laptop
-              is called the <a href="https://frame.work/">"Framework laptop"</a>.Allow me to tell you more about this laptop.</p>
-           <p>Framework laptops are modular repairable laptop you can upgrade nd fix yourself.
+              is called the <a href="https://frame.work/">"Framework laptop"</a>.
+              Allow me to tell you more about this laptop.</p>
+           <p>Framework laptops are modular repairable laptop you can upgrade and fix yourself.
               This feature gives it an edge over other laptops.And this makes it a suitable 
-              laptop for programmers because what if you run out of storage or need ROM processing.
+              laptop for programmers because what if you run out of storage or need more ROM for processing.
               The designers of this amazing laptop are <b>Nirav Patel,Poyu Chen and Kieran Levin.</b>
               The current models of this laptop are Framework 12,13 and 16.For more information about 
-              their laptops visit their original site <a href="https://frame.work/">here</a>
-            </p>
+              their laptops visit their original site <a href="https://frame.work/">here.</a></p>
+            <p>One of the feature I like most about this laptop is the opportunity to expand its memory.
+               This is a very useful feature because most laptop don't give this feature.Also the RAM is 
+               upgradable,giving you an opportunity to improve the speed of your laptop.</p>
+            <p>If you are planning buy any laptop I will advise you to checkout the framework laptop on their origanal
+                site <a href="https://frame.work/">here</a>.Trust me this is a laptop you can rely on for years.I 
+                wish to own one because of how amazing it is.
+            </p>   
            
-            <p>WHY THIS LAPTOP IS SPECIAL</p>
+            <h3>WHY THIS LAPTOP IS SPECIAL</h3>
             <ul>
-                <li>Upgradable:You can upgrade storage or ROM when needed</li>
-                <li>Repairable:Every part can be replaced like battery,screen or keyboard because they are independent parts.</li>
-                <li>Customizable:You can choos yur own ports like USB-C,HDMI,USB-A etc.</li>
+                <li><strong>Upgradable:</strong>You can upgrade storage or ROM when needed</li>
+                <li><strong>Repairable:</strong>Every part can be replaced like battery,screen or keyboard because they are independent parts.</li>
+                <li><strong>Customisable</strong>You can choose your own ports like USB-C,HDMI,USB-A etc.</li>
             </ul>
-        </div> 
-        <div>
-            <p>Find the Framework laptop model that best suits you</p>
+            <br>
+            <h4>Fill in the form below to find the framework laptop model that best suits you.</h4>
+            <p id="note"><strong>Note:</strong>Your budget option will greatly influnce the output.You can pick <br>
+                the option "not sure" and select the uses to bring the output without <br>the budget infuencing it.You can later pick your budget later.</p>
+            <div id="all-form">
             <form>
-                <label for="budget"></label>
-                <input type="number" id="budget" placeholder="e.g 1200" required>
+               <div id="form-1">
+                  <label for="">1.Budget</label><br>
+                  <input type="radio" id="not-sure" name="budget" value="not-sure" checked required>
+                  <label for="not-sure">Not sure</label><br>
+                  <input type="radio" id="low" name="budget" value="low" required>
+                  <label for="low">Low</label><br>
+                  <input type="radio" id="medium" name="budget" value="medium" required>
+                  <label for="medium">Medium</label><br>
+                  <input type="radio" id="high" name="budget" value="high" required>
+                  <label for="high">High</label>
+               </div>
+               <div id="form-2">
+                 <label>2.Use</label><br>
+                 <input type="checkbox" id="use-gaming" name= "use" value="gaming" >
+                 <label for="use-gaming">Gaming</label><br>
+                 <input type="checkbox" id="use-coding" name="use" value="coding" checked>
+                 <label for="use-coding">Coding/Programming</label><br>
+                 <input type="checkbox" id="use-content" name= "use" value="editing" checked >
+                 <label for="use-content">Content/Video editing</label><br>
+                 <input type="checkbox" id="use-school"  name="use" value="school"checked >
+                 <label for="use-school">School</label><br>
+                 <button type="button" id="button" onclick="findLaptop()">Find My Suitable Laptop</button>
+               </div>
+               <div id="result"></div>
+            </div>
             </form>
-
-        </div>
-            
-    </body>
+            <br>
+            <br>
+            <div>
+                <h2 id="devlog">DEVLOGS</h2>
+                <p>During the period of this project I only had time during weekends and few minutes
+                    during weekdays because of school.I was able to carry out this project on my mom's laptop.
+                </p>
+                <p><b>Week 1(October 10-11):</b>I officially started on the 10th of October.I created the file and started to input the html texts.I debugged the
+                    errors and the texts and also the links to farmework official page.I debugged the html during 
+                    the week when I had time.
+                </p>
+                <p><b>Week 2(October 16-18):</b>Created the html form that picks the suitable laptop based on choice.I 
+                    also started adding css to the page such as styling the texts,form and overall page.Though I made
+                    some mistakes because I didn't really practiced much on css before.One of the hardest part for me 
+                    here was adding responsiveness.
+                </p>
+                <p>I havn't built any responsive page before and it was very difficult for me.Through the help of some 
+                    youtube videos and with the help of AI I was able to get it and I was really happy.I 
+                    also debugged the code during weekdays when I had time.
+                </p>
+                <p><b>Week 3(October 23-25):</b>This was when I started the Javascript code.It was the most challenging
+                    part of this project.I had never written JS code before,since I learned it during the summer of this year.
+                    I'll be honest I rellied mostly on AI for this part.One of the problems I faced was due to the fact that JS is case sensitive
+                    and even unnecessary spacing and omitted semi-colon prevented the code from working.I 
+                    tried debugging most of it and with the help of AI i was able to debug it completely.This was very overwhelmimg
+                    for me but I learned on JS due to the fact I was typing.I understood more on Boolean and also learn't alot of lessons
+                    during this process.
+                 
+                <p><b>Week 4(October 27-30):</b>This week was a little bit different.I worked on my project on 
+                    a tuesday.I Started writing my devlogs into the code,debugged my code and adjusted some things.
+                    I was on a mid-term break from school so I had plenty of time to complete my project.
+                </p>
+                <p>On the 28th of Octber was my birthday and I reached age 14.It was an amazing day fo me.I continued writng my devlogs
+                    and continued fixing minor errors like spellings and spacing.The next day I fixed bugs in the code.
+                </p>
+                <p>Finally on the 30th I did some small finishing and shipped it</p>
+            </div>
+            <footer>
+                <p>I have come to to end of this project and when i looked back I saw that it was worth the journey.
+                    Though I discovered about hackclub and stardance event latewhich was early october,I still maximized
+                    this opportunity to build something great.
+                    I learned alot of things along the way and sacrificed my time and had sleepless night,but I 
+                    think it worth it.</p>
+                   <p>Some of my achievemens were;</p>
+                   <ul>
+                    <li>Building a responsive page for the first time</li>
+                    <li>Writing JS code for the first time</li>
+                    <li>And other great achievements</li>
+                   </ul> 
+                   <p>Finally,I thank God.Also my parents for helping me through out this process.My mom lent 
+                      me her laptop for almost a month and dad connected his hospot to the laptop wifi.I
+                      thank my siblings for not disturbing me(though they disturbed me a little).Thanks to Sololearn
+                      and its community for teaching me since coding sie when I was 12 years old.I als thank 
+                      supersimple.dev youtube channel.
+                   </p>
+                   <p>What kept me going was perseverance,persistence and a quote 
+                      "What you believe you can achieve but only if you work hard for it".I faced 
+                       challenges like electricity problems,school work and even self doubt along
+                       the way.But amazingly I made it
+                    </p>
+                    <br>
+                    <p>P.s.I would be very happy if I could somehow get a framework laptop of my own. </p>
+            </footer>
+            <script src="Framework.js"></script>
 </html>
-<style>
-    body{
-        font-style: arial;
-    }
-</style>
+</body>
